@@ -20,12 +20,10 @@
 
         <div class="collapse navbar-collapse" id="navbarColor01">
 
-            {{--
-                  <form class="d-flex">
-                    <input class="form-control me-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                  </form>
-            --}}
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/todos/analytics">Analytics</a>
+                </li>
         </div>
     </div>
 </nav>
