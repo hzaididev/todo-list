@@ -18,4 +18,6 @@ Route::get('/', function () {
   return Redirect::to( '/todos');
 });
 
+Route::get('/todos/analytics',['App\Http\Controllers\ToDoController', 'analytics'])->name('todos.analytics');
+
 Route::resource('/todos', 'App\Http\Controllers\ToDoController');
