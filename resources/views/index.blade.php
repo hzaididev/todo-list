@@ -17,6 +17,7 @@
                 <td>Name</td>
                 <td>Status</td>
                 <td>Completed At</td>
+                <td>Created At</td>
                 <td class="text-center">Action</td>
             </tr>
             </thead>
@@ -27,6 +28,7 @@
                     <td>{{$task->name}}</td>
                     <td>@if($task->status) Completed @endif</td>
                     <td>@if($task->completed_at) {{ $task->completed_at->toFormattedDateString() }} @endif</td>
+                    <td>{{ $task->created_at->toFormattedDateString() }}</td>
                     <td class="text-center">
                         <a href="{{ route('todos.edit', $task->id)}}" class="btn btn-success btn-sm">Edit</a>
                         <form action="{{ route('todos.destroy', $task->id)}}" method="post" style="display: inline-block">
